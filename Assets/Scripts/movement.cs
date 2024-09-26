@@ -32,30 +32,6 @@ public class movement : MonoBehaviour
                 movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
             }
         }
-        anim.SetBool("walkup", false);
-        anim.SetBool("walkdown", false);
-        anim.SetBool("walkleft", false);
-        anim.SetBool("walkright", false);
-
-        if (Input.GetAxisRaw("Horizontal") == 1f)
-        {
-            anim.SetBool("walkright", true);
-        }
-
-        if (Input.GetAxisRaw("Horizontal") == -1f)
-        {
-            anim.SetBool("walkleft", true);
-        }
-
-        if (Input.GetAxisRaw("Vertical") == 1f)
-        {
-            anim.SetBool("walkup", true);
-        }
-
-        if (Input.GetAxisRaw("Vertical") == -1f)
-        {
-            anim.SetBool("walkdown", true);
-        }
 
     }
 }
